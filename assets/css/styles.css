@@ -180,6 +180,7 @@ button {
 /* ================ Hero ================ */
 .hero__body {
     display: flex;
+    padding-bottom: 164.7px;
 }
 
 .hero__heading {
@@ -305,4 +306,94 @@ button {
 }
 .hero__decorate-extra2 {
     margin: 561.06px 34.12px auto 1027.45px;
+}
+
+/* ================ Hero ================ */
+.partner {
+    margin: 42.3px 0 106px;
+}
+
+.partner__body {
+    height: 201px;
+    border-radius: 100.5px;
+    background: var(--scondery-color-light-green, #e2eddf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 897px;
+}
+
+.partner__item .partner__item-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partner__item-icon {
+    display: inline-block;
+}
+
+.partner__item:nth-child(2) .partner__item-icon {
+    margin-right: 5px;
+}
+
+.partner__item:nth-child(3) .partner__item-icon {
+    margin-right: 11px;
+}
+
+.partner__item:last-child .partner__item-icon {
+    margin-right: 14px;
+}
+
+.partner__item-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partner__item:first-child .partner__item-link {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Poppins;
+    font-size: 3.1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.partner__item:nth-child(2) .partner__item-link {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.partner__item:nth-child(3) .partner__item-link {
+    color: #163c35;
+    font-family: Poppins;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.partner__item:nth-child(4) .partner__item-link {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Sonsie One;
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.partner__item:last-child .partner__item-link {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Poppins;
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.995px;
 }
