@@ -15,7 +15,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Public Sans", sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 /* ================ Scroll ================ */
@@ -77,17 +76,48 @@ button {
 }
 
 .section-heading {
+    position: relative;
     color: var(--primary-color-black, #152427);
+    font-family: "Poppins", sans-serif;
     font-size: 4.2rem;
     font-weight: 600;
     line-height: 1.24; /* 123.81% */
 }
 
 .section-desc {
-    color: var(--text-color-black-gray, #575d5e);
-    font-size: 1.8rem;
+    color: var(--text-color-light-gray, #7d8188);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
     font-weight: 500;
-    line-height: 1.56; /* 155.556% */
+    line-height: 1.71; /* 171.429% */
+}
+
+.section-menu {
+    position: relative;
+    color: var(--primary-color-black, #152427);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+    margin-left: 46px;
+}
+
+.section-menu::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: var(--primary-color-black, #152427);
+    left: -46px;
+    top: 50%;
+}
+
+.section-title {
+    color: var(--primary-color-black, #152427);
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
 }
 
 /* ================ Header ================ */
@@ -184,6 +214,7 @@ button {
 }
 
 .hero__heading {
+    color: var(--primary-color-black, #152427);
     max-width: 368px;
     margin: 103px 0 20px;
     font-size: 5rem;
@@ -193,6 +224,10 @@ button {
 
 .hero__desc {
     max-width: 341px;
+    color: var(--text-color-black-gray, #575d5e);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56; /* 155.556% */
 }
 
 .hero__cta {
@@ -396,4 +431,110 @@ button {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.995px;
+}
+
+/* ================ Services ================ */
+.service__info {
+    margin-bottom: 76px;
+    padding-bottom: 9px;
+}
+
+.service__img {
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service__heading {
+    margin-top: 12px;
+    width: 520px;
+    height: 104px;
+}
+
+.service__heading::after {
+    position: absolute;
+    content: "";
+    bottom: 20%;
+    left: 67.5%;
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color-black, #152427);
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -63px;
+    column-gap: 17px;
+    margin-right: 76px;
+}
+
+.action-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 54px;
+    background: var(--scondery-color-light-green, #e2eddf);
+    color: #152427;
+    transition: 0.25s;
+}
+
+.arrow-prev {
+    rotate: 180deg;
+}
+
+.action-arrow:hover {
+    background: var(--primary-color-black-green, #143c3c);
+    color: #ffffff;
+}
+
+.action-arrow.action-active {
+    background: var(--primary-color-black-green, #143c3c);
+    color: #ffffff;
+}
+
+.service__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+}
+
+.service__title {
+    margin: 24px 0 18px;
+    transition: 0.25s;
+}
+
+.service__desc {
+    width: 268px;
+    transition: 0.25s;
+}
+
+.service__item {
+    overflow: hidden;
+    height: 480px;
+}
+
+.service__item:hover {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service__item:hover .service__title,
+.service__item:hover .service__desc {
+    margin-left: 18px;
+}
+
+.service__img-bg {
+    width: 368px;
+    height: 318px;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+.service__img {
+    transition: 0.25s;
 }
