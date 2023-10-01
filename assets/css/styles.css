@@ -1331,3 +1331,14 @@ button {
 .icon__input-link {
     padding: 3px;
 }
+
+.footer__copyright {
+    text-align: center;
+    padding-top: 28px;
+}
+.copyright {
+    color: var(--text-color-light-gray, #7d8188);
+    font-family: Public Sans;
+    font-size: 1.6rem;
+    line-height: 1.625;
+}
