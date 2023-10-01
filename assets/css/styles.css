@@ -863,6 +863,7 @@ button {
     bottom: 0;
     width: 450px;
     height: 444px;
+    transition: 0.25s;
 }
 
 .our__desc {
