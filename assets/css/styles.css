@@ -763,6 +763,7 @@ button {
     justify-content: space-between;
     padding: 54px 41px 28px 20px;
     transition: 0.25s;
+    height: 185px;
 }
 
 .our__first-item {
@@ -808,10 +809,9 @@ button {
 }
 
 .our__item:hover {
+    height: 185px;
     border-radius: 33px;
-    padding: 57px 41px 45px 20px;
     background: var(--scondery-color-light-green, #e2eddf);
-    transform: translateY(-10px);
     cursor: pointer;
     justify-content: flex-start;
     gap: 64px;
