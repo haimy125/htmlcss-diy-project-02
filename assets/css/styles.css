@@ -759,14 +759,6 @@ button {
     margin-top: 115px;
 }
 
-/* .our__item:not(.our__item:first-child) {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 54px 41px 28px 20px;
-    transition: 0.25s;
-} */
 .our__item {
     position: relative;
     display: flex;
@@ -781,23 +773,18 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* position: relative; */
 }
 
 .our__more {
     display: flex;
     flex-direction: column;
     gap: 22px;
-    margin-top: 22px;
-    margin-right: 40px;
+    margin-right: 130px;
 }
 
 .our__learn-more {
-    display: block;
+    display: none;
     position: relative;
-    /* position: absolute; */
-    /* bottom: 35px;
-    left: 170px; */
     color: var(--text-color-black-gray, #575d5e);
     font-family: Poppins;
     font-size: 1.8rem;
@@ -815,12 +802,12 @@ button {
     left: 0;
 }
 
-.our__item:nth-child(2) .our__title {
-    margin-right: 130px;
+.our__item:nth-child(1) .our__more {
+    margin-right: 180px;
 }
 
-.our__item:nth-child(3) .our__title {
-    margin-right: 200px;
+.our__item:nth-child(3) .our__more {
+    margin-right: 180px;
 }
 
 .our__item:hover {
@@ -828,9 +815,29 @@ button {
     padding: 57px 41px 45px 20px;
     background: var(--scondery-color-light-green, #e2eddf);
     transform: translateY(-10px);
+    cursor: pointer;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.our__item:hover .our__learn-more {
+    display: block;
+}
+
+.our__item:hover .our__img {
+    display: block;
+}
+
+.our__item:hover .our__desc {
+    display: none;
+}
+
+.our__item:hover .our__more {
+    display: flex;
 }
 
 .our__item:hover .our__stt {
+    margin-bottom: 20px;
     margin-left: 10px;
 }
 
@@ -853,6 +860,7 @@ button {
 }
 
 .our__img {
+    display: none;
     position: absolute;
     right: 92px;
     bottom: 0;
@@ -914,7 +922,7 @@ button {
     position: relative;
 }
 
-.project__video {
+#video {
     width: 1140px;
     height: 544px;
     border-radius: 22px;
@@ -1016,6 +1024,13 @@ button {
     background: #fff;
     box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
     border: none;
+}
+
+.feature__title-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .feature__icon {
@@ -1160,6 +1175,9 @@ button {
     transition: 0.25s;
 }
 
+.blog__item-title {
+    display: inline-block;
+}
 .blog__item-desc {
     margin: 13px 0 9px;
     width: 346px;
@@ -1190,6 +1208,7 @@ button {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.2; /* 120% */
+    transition: 0.25s;
 }
 
 /* ================ Footer ================ */
