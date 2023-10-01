@@ -251,6 +251,14 @@ button {
         rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.hero__play-link:hover .haft-circle {
+    transform: rotate(-314deg);
+}
+
+.hero__play-link:hover .hero__watch-video {
+    color: #62865b;
+}
+
 .haft-circle {
     /* Create the circle */
     width: 57px;
@@ -262,7 +270,7 @@ button {
     border-left-color: transparent;
     /* Rotate the circle */
     transform: rotate(-135deg);
-    /* transition: all 0.4s ease-out; */
+    transition: all 0.4s ease-out;
 }
 
 .hero__icon {
